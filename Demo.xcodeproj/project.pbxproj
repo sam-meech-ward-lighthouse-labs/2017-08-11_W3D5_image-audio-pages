@@ -15,6 +15,9 @@
 		22FD6CF11F3E400C001C6402 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FD6CF01F3E400C001C6402 /* main.m */; };
 		22FD6CFB1F3E400C001C6402 /* DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FD6CFA1F3E400C001C6402 /* DemoTests.m */; };
 		22FD6D061F3E400C001C6402 /* DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FD6D051F3E400C001C6402 /* DemoUITests.m */; };
+		22FD6D141F3E4876001C6402 /* mario_its_me.wav in Resources */ = {isa = PBXBuildFile; fileRef = 22FD6D131F3E45D3001C6402 /* mario_its_me.wav */; };
+		22FD6D171F3E4A02001C6402 /* MyPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FD6D161F3E4A02001C6402 /* MyPageViewController.m */; };
+		22FD6D1A1F3E4C76001C6402 /* PagesOfDifferentMoviePostersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FD6D191F3E4C76001C6402 /* PagesOfDifferentMoviePostersViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		22FD6D011F3E400C001C6402 /* DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22FD6D051F3E400C001C6402 /* DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoUITests.m; sourceTree = "<group>"; };
 		22FD6D071F3E400C001C6402 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22FD6D131F3E45D3001C6402 /* mario_its_me.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = mario_its_me.wav; sourceTree = "<group>"; };
+		22FD6D151F3E4A02001C6402 /* MyPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyPageViewController.h; sourceTree = "<group>"; };
+		22FD6D161F3E4A02001C6402 /* MyPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyPageViewController.m; sourceTree = "<group>"; };
+		22FD6D181F3E4C76001C6402 /* PagesOfDifferentMoviePostersViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PagesOfDifferentMoviePostersViewController.h; sourceTree = "<group>"; };
+		22FD6D191F3E4C76001C6402 /* PagesOfDifferentMoviePostersViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PagesOfDifferentMoviePostersViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,10 +113,15 @@
 				22FD6CE21F3E400C001C6402 /* AppDelegate.m */,
 				22FD6CE41F3E400C001C6402 /* ViewController.h */,
 				22FD6CE51F3E400C001C6402 /* ViewController.m */,
+				22FD6D151F3E4A02001C6402 /* MyPageViewController.h */,
+				22FD6D161F3E4A02001C6402 /* MyPageViewController.m */,
+				22FD6D181F3E4C76001C6402 /* PagesOfDifferentMoviePostersViewController.h */,
+				22FD6D191F3E4C76001C6402 /* PagesOfDifferentMoviePostersViewController.m */,
 				22FD6CE71F3E400C001C6402 /* Main.storyboard */,
 				22FD6CEA1F3E400C001C6402 /* Assets.xcassets */,
 				22FD6CEC1F3E400C001C6402 /* LaunchScreen.storyboard */,
 				22FD6CEF1F3E400C001C6402 /* Info.plist */,
+				22FD6D131F3E45D3001C6402 /* mario_its_me.wav */,
 				22FD6CF01F3E400C001C6402 /* main.m */,
 			);
 			path = Demo;
@@ -235,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22FD6D141F3E4876001C6402 /* mario_its_me.wav in Resources */,
 				22FD6CEE1F3E400C001C6402 /* LaunchScreen.storyboard in Resources */,
 				22FD6CEB1F3E400C001C6402 /* Assets.xcassets in Resources */,
 				22FD6CE91F3E400C001C6402 /* Main.storyboard in Resources */,
@@ -265,6 +279,8 @@
 				22FD6CE61F3E400C001C6402 /* ViewController.m in Sources */,
 				22FD6CF11F3E400C001C6402 /* main.m in Sources */,
 				22FD6CE31F3E400C001C6402 /* AppDelegate.m in Sources */,
+				22FD6D171F3E4A02001C6402 /* MyPageViewController.m in Sources */,
+				22FD6D1A1F3E4C76001C6402 /* PagesOfDifferentMoviePostersViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +445,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7GT6EK8D4J;
 				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.meech-ward.Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -442,6 +459,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7GT6EK8D4J;
 				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.meech-ward.Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
